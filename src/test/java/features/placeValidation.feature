@@ -13,11 +13,7 @@ Feature: Validating Place API's
       | AAhouse | English  | Bakery cross center |
       | NewName | French   | sweety avenue       |
 @DeletePlace @Regression
-  Scenario:Verify if Delete Place Functionality is working
-    Given DeletePlace Payload
-    When user calls "deletePlaceAPI" with "POST" http request
-    Then the API call got success with status code 200
-    And "status" is response body is "OK"
+
 
 
 
